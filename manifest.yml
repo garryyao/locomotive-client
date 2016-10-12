@@ -1,6 +1,6 @@
 ---
 applications:
-  - name: <yourname>-locomotive-client-service
+  - name: gy-locomotive-client-service
     buildpack: java_buildpack
     path: target/client-0.0.1-SNAPSHOT.jar #make sure this matches the artifactID and version in the pom.xml
  
@@ -9,16 +9,16 @@ env:
     # acs integration
     #Use commented code as reference
     #accessTokenEndpointUrl : https://2e93f1db-9f2c-43e9-9fa9-7ba816c8f01c.predix-uaa-training.run.aws-usw02-pr.ice.predix.io/oauth/token
-    accessTokenEndpointUrl : https://<yourUAAzone>.predix-uaa-training.run.aws-usw02-pr.ice.predix.io/oauth/token
+    accessTokenEndpointUrl : https://ad746ec0-0a7b-4518-9a52-c289c1e0a690.predix-uaa-training.run.aws-usw02-pr.ice.predix.io/oauth/token
     #clientId : asha-client
     #clientSecret: clientsecret
-    clientId : <yourclientName>
-    clientSecret: <yourclientsecret>
+    clientId : gy-client
+    clientSecret: lurker
     #acsServiceInstanceName : asha-locomotive-acs
-    acsServiceInstanceName : <yourACSInstanceName>
+    acsServiceInstanceName : gy-acs
     acsUri : https://predix-acs-training.run.aws-usw02-pr.ice.predix.io
     #acsZone : 58bb2518-5402-45d6-9e6f-675dff17f80e
-    acsZone : <yourACSzone>
+    acsZone : 01fa3d53-6202-4186-860d-686a0730658d
     #acsPolicyEvaluationTokenScope : predix-acs-training.zones.58bb2518-5402-45d6-9e6f-675dff17f80e.user
-    acsPolicyEvaluationTokenScope : predix-acs-training.zones.<yourACSzone>.user
+    acsPolicyEvaluationTokenScope : predix-acs-training.zones.01fa3d53-6202-4186-860d-686a0730658d.user
  
